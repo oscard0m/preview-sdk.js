@@ -34,11 +34,13 @@
 		"lint": "prettier --check \"*.{js,json,ts,md}\" \".github/**/*.yml\" \"test/*.ts\"",
 		"lint:fix": "prettier --write \"*.{js,json,ts,md}\" \".github/**/*.yml\" \"test/*.js\"",
 		"coverage": "c8 report --reporter html",
-		"postcoverage": "open-cli coverage/index.html"
+		"postcoverage": "open-cli coverage/index.html",
+		"bundle": "esbuild --bundle --minify --platform=node --outfile=dist/index.js index.js",
 	},
 	"devDependencies": {
 		"@types/node": "^22.5.0",
 		"ava": "^6.1.3",
+		"esbuild": "^0.23.1",
 		"prettier": "^3.3.3",
 		"tsd": "^0.31.1",
 		"typescript": "^5.5.4",
