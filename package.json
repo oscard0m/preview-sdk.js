@@ -36,6 +36,7 @@
 		"coverage": "c8 report --reporter html",
 		"postcoverage": "open-cli coverage/index.html",
 		"bundle": "esbuild --bundle --minify --platform=node --outfile=dist/index.js index.js",
+		"gravity": "gravityci"
 	},
 	"devDependencies": {
 		"@gravityci/cli": "^0.0.3",
